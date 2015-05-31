@@ -1,0 +1,521 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DINOWEB</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="font/stylesheet.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.min.js"></script>
+	<script src="js/slides.min.jquery.js"></script>
+	
+<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				generateNextPrev: true,
+				play: 5000,
+				pause: 2500,
+				effect: 'fade'
+			});
+			$('#slides_two').slides({
+				generateNextPrev: true,
+				play: 5000
+			});
+			$('#slides_three').slides({
+				generateNextPrev: true,
+				play: 5000
+			});
+			$('#slides_four').slides({
+				effect: 'fade',
+				play: 7000,
+				generateNextPrev : false
+			});
+			$('#slides_five').slides({
+				generateNextPrev: false,
+				play: 7000,
+				effect: 'fade'
+			});
+		});
+	</script>
+
+<script language="JavaScript">
+function disableCtrlKeyCombination(e)
+{
+//list all CTRL + key combinations you want to disable
+var forbiddenKeys = new Array('a', 'n', 'c', 'x', 'v', 'j' , 'w');
+var key;
+var isCtrl;
+
+if(window.event)
+{
+key = window.event.keyCode;     //IE
+if(window.event.ctrlKey)
+isCtrl = true;
+else
+isCtrl = false;
+}
+else
+{
+
+key = e.which;     //firefox
+if(e.ctrlKey)
+isCtrl = true;
+else
+isCtrl = false;
+}
+
+//if ctrl is pressed check if other key is in forbidenKeys array
+if(isCtrl)
+{
+for(i=0; i<forbiddenKeys.length; i++)
+{
+//case-insensitive comparation
+if(forbiddenKeys[i].toLowerCase() == String.fromCharCode(key).toLowerCase())
+{
+alert('Key combination CTRL + '+String.fromCharCode(key) +' has been disabled.');
+return false;
+}
+}
+}
+return true;
+}
+</script>
+
+</head>
+
+<body onkeypress="return disableCtrlKeyCombination(event);" onkeydown="return disableCtrlKeyCombination(event);">
+	
+    <div class="MainTemplate" >
+    	<div class="wraper">
+    	<div class="Header">
+        	<div class="HeaderTop">
+            	
+                <div class="clr"></div>
+            </div>
+            <div class="HeaderBottom">
+            	<div class="logo">
+                	<a href="index.html"><img src="images/logo.png" alt="" /></a>
+                </div>
+                <div class="MainMenu">
+                	<ul>
+                    	<li class="active"><a href="index.html">Home</a>
+                        	<ul class="submenu">
+                            	<li class="active"><a href="dino.html">Dino</a></li>
+                                <li><a href="dino.html">COMO FUNCIONA</a></li>
+                                <li><a href="dino.html">NOSSOS CLIENTES</a></li>
+                                <li><a href="dino.html">QUEM USA</a></li>
+                                <li><a href="dino.html">PREÇOS</a></li>
+                                <li><a href="dino.html">SAIBA COMO</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="centro.html">CENTRO DE NOTÍCIAS</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
+                    </ul>
+                </div>
+                
+                <div class="RightMenu"><a href="#"></a></div>
+                <div class="clr"></div>
+            </div>
+            
+            <div class="MainSlider">
+            	<div id="slides">
+                    <div class="slides_container">
+                        <div class="slider">
+                        	<div class="Sliderdesc">
+                            	<h1 class="sliderheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</h1>
+                            	<p class="sliderdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="sliderimg"><img src="images/slider-1.png" alt="" /></div>
+                            <div class="clr"></div>
+                        </div>
+                        <div class="slider">
+                        	<div class="Sliderdesc">
+                            	<h1 class="sliderheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</h1>
+                            	<p class="sliderdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="sliderimg"><img src="images/slider-1.png" alt="" /></div>
+                            <div class="clr"></div>
+                        </div>
+                        
+                        <div class="slider">
+                        	<div class="Sliderdesc">
+                            	<h1 class="sliderheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</h1>
+                            	<p class="sliderdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="sliderimg"><img src="images/slider-1.png" alt="" /></div>
+                            <div class="clr"></div>
+                        </div>
+                        
+                        <div class="slider">
+                        	<div class="Sliderdesc">
+                            	<h1 class="sliderheader">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</h1>
+                            	<p class="sliderdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            </div>
+                            <div class="sliderimg"><img src="images/slider-1.png" alt="" /></div>
+                            <div class="clr"></div>
+                        </div>
+                    </div>
+                </div> <!-- Slides -->
+            	<div class="clr"></div>
+            </div>
+            
+            
+            
+        	<div class="clr"></div>
+        </div> <!-- End Header -->
+            <div class="clr"></div>
+    	</div>	<!-- End Wraper -->
+        <div class="MainBody">
+        	<div class="wraper">
+                <div class="BottomSlider">
+                    <div class="TopHeading">
+                        <div class="btitle">Broser News Releases</div>
+                        <div class="rtitle">
+                            <a href="#">View Lates News Releases </a> | 
+                            <a href="#">Sign in to My News for Investors</a>
+                        </div>
+                        <div class="clr"></div>
+                     </div>
+                    
+                    <div id="slides_two">
+                        <div class="slider-l">
+                            <div class="slider-r">
+                                <div class="slides_container">
+                            
+                                    <div class="slider">
+                                        
+                                        <div class="postlist">
+                                            <div class="thumb"><img src="images/thumb-1.png" alt="" /></div>
+                                            <div class="posttitle">Lorem ipsum dolor sit amet</div>
+                                            <div class="postdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+                                            <div class="readmore"><a href="#">Read More</a></div>
+                                        </div> <!-- End Post list -->
+                                        <div class="postlist">
+                                            <div class="thumb"><img src="images/thumb-2.png" alt="" /></div>
+                                            <div class="posttitle">Lorem ipsum dolor sit amet</div>
+                                            <div class="postdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+                                            <div class="readmore"><a href="#">Read More</a></div>
+                                        </div> <!-- End Post list -->
+                                        <div class="postlist">
+                                            <div class="thumb"><img src="images/thumb-3.png" alt="" /></div>
+                                            <div class="posttitle">Lorem ipsum dolor sit amet</div>
+                                            <div class="postdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+                                            <div class="readmore"><a href="#">Read More</a></div>
+                                        </div> <!-- End Post list -->
+                                        <div class="postlist">
+                                            <div class="thumb"><img src="images/thumb-4.png" alt="" /></div>
+                                            <div class="posttitle">Lorem ipsum dolor sit amet</div>
+                                            <div class="postdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+                                            <div class="readmore"><a href="#">Read More</a></div>
+                                        </div> <!-- End Post list -->
+                                        <div class="clr"></div>
+                                    </div> <!-- End Slider -->
+                                    
+                                    <div class="slider">
+                                        
+                                        <div class="postlist">
+                                            <div class="thumb"><img src="images/thumb-1.png" alt="" /></div>
+                                            <div class="posttitle">Lorem ipsum dolor sit amet</div>
+                                            <div class="postdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+                                            <div class="readmore"><a href="#">Read More</a></div>
+                                        </div> <!-- End Post list -->
+                                        <div class="postlist">
+                                            <div class="thumb"><img src="images/thumb-2.png" alt="" /></div>
+                                            <div class="posttitle">Lorem ipsum dolor sit amet</div>
+                                            <div class="postdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+                                            <div class="readmore"><a href="#">Read More</a></div>
+                                        </div> <!-- End Post list -->
+                                        <div class="postlist">
+                                            <div class="thumb"><img src="images/thumb-3.png" alt="" /></div>
+                                            <div class="posttitle">Lorem ipsum dolor sit amet</div>
+                                            <div class="postdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+                                            <div class="readmore"><a href="#">Read More</a></div>
+                                        </div> <!-- End Post list -->
+                                        <div class="postlist">
+                                            <div class="thumb"><img src="images/thumb-4.png" alt="" /></div>
+                                            <div class="posttitle">Lorem ipsum dolor sit amet</div>
+                                            <div class="postdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+                                            <div class="readmore"><a href="#">Read More</a></div>
+                                        </div> <!-- End Post list -->
+                                        <div class="clr"></div>
+                                    </div> <!-- End Slider -->
+                                    <div class="slider">
+                                        
+                                        <div class="postlist">
+                                            <div class="thumb"><img src="images/thumb-1.png" alt="" /></div>
+                                            <div class="posttitle">Lorem ipsum dolor sit amet</div>
+                                            <div class="postdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+                                            <div class="readmore"><a href="#">Read More</a></div>
+                                        </div> <!-- End Post list -->
+                                        <div class="postlist">
+                                            <div class="thumb"><img src="images/thumb-2.png" alt="" /></div>
+                                            <div class="posttitle">Lorem ipsum dolor sit amet</div>
+                                            <div class="postdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+                                            <div class="readmore"><a href="#">Read More</a></div>
+                                        </div> <!-- End Post list -->
+                                        <div class="postlist">
+                                            <div class="thumb"><img src="images/thumb-3.png" alt="" /></div>
+                                            <div class="posttitle">Lorem ipsum dolor sit amet</div>
+                                            <div class="postdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+                                            <div class="readmore"><a href="#">Read More</a></div>
+                                        </div> <!-- End Post list -->
+                                        <div class="postlist">
+                                            <div class="thumb"><img src="images/thumb-4.png" alt="" /></div>
+                                            <div class="posttitle">Lorem ipsum dolor sit amet</div>
+                                            <div class="postdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+                                            <div class="readmore"><a href="#">Read More</a></div>
+                                        </div> <!-- End Post list -->
+                                        <div class="clr"></div>
+                                    </div> <!-- End Slider -->
+                                    <div class="slider">
+                                        
+                                        <div class="postlist">
+                                            <div class="thumb"><img src="images/thumb-1.png" alt="" /></div>
+                                            <div class="posttitle">Lorem ipsum dolor sit amet</div>
+                                            <div class="postdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+                                            <div class="readmore"><a href="#">Read More</a></div>
+                                        </div> <!-- End Post list -->
+                                        <div class="postlist">
+                                            <div class="thumb"><img src="images/thumb-2.png" alt="" /></div>
+                                            <div class="posttitle">Lorem ipsum dolor sit amet</div>
+                                            <div class="postdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+                                            <div class="readmore"><a href="#">Read More</a></div>
+                                        </div> <!-- End Post list -->
+                                        <div class="postlist">
+                                            <div class="thumb"><img src="images/thumb-3.png" alt="" /></div>
+                                            <div class="posttitle">Lorem ipsum dolor sit amet</div>
+                                            <div class="postdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+                                            <div class="readmore"><a href="#">Read More</a></div>
+                                        </div> <!-- End Post list -->
+                                        <div class="postlist">
+                                            <div class="thumb"><img src="images/thumb-4.png" alt="" /></div>
+                                            <div class="posttitle">Lorem ipsum dolor sit amet</div>
+                                            <div class="postdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</div>
+                                            <div class="readmore"><a href="#">Read More</a></div>
+                                        </div> <!-- End Post list -->
+                                        <div class="clr"></div>
+                                    </div> <!-- End Slider -->
+                                    <div class="clr"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- End slides_two -->
+            
+                </div>
+                
+                <div class="middlewidget">
+                	<div class="widget">
+                    	<h2 class="widgettitle title-1">Sobre</h2>
+                        <ul>
+                        	<li><a href="#">Lorem ipsum dolor sit amet, consectetur</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur</a></li>
+                        </ul>
+                    </div> <!-- Widget -->
+                    
+                    <div class="widget">
+                    	<h2 class="widgettitle title-2">CObo</h2>
+                        <ul>
+                        	<li><a href="#">Lorem ipsum dolor sit amet, consectetur</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur</a></li>
+                        </ul>
+                    </div> <!-- Widget -->
+                    
+                    <div class="widget">
+                    	<h2 class="widgettitle title-3">Depoimentos de</h2>
+                        <div class="widgetbg">
+                            <div class="Author">
+                                Fulana Foster
+                                <span>CEO, <i>KupCakesa</i></span>
+                            </div>
+                            
+                            <div id="slides_four">
+                                 <div class="slides_container">
+                                    
+                                            <div class="slider">
+                                                <div class="authordes">Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur</div>
+                                                <div class="clr"></div>
+                                            </div> <!-- End Slider -->
+                                            
+                                            <div class="slider">
+                                                <div class="authordes">Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur</div>
+                                                <div class="clr"></div>
+                                            </div> <!-- End Slider -->
+                                            
+                                            <div class="slider">
+                                                <div class="authordes">Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur</div>
+                                                <div class="clr"></div>
+                                            </div> <!-- End Slider -->
+                                            
+                                            <div class="slider">
+                                                <div class="authordes">Lorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consecteturLorem ipsum dolor sit amet, consectetur</div>
+                                                <div class="clr"></div>
+                                            </div> <!-- End Slider -->
+                                     <div class="clr"></div>
+                                </div>
+                            </div> <!-- End slides_two -->
+                    
+                    
+                            
+                        </div>
+                    </div> <!-- Widget -->
+                    <div class="clr"></div>
+                </div>
+                
+                
+                <div class="clr"></div>
+            </div>
+            <div class="partnerslider">
+                <div class="wraper">
+                	<h2 class="title">Faca Como Eles</h2>
+                	<div id="slides_three">
+                         <div class="slides_container">
+                            
+                                    <div class="slider">
+                                        
+                                        <div class="partner"><img src="images/Untitled-1.png" alt="" /></div>
+                                        <div class="partner"><img src="images/idea.png" alt="" /></div>
+                                        <div class="partner"><img src="images/jecko.png" alt="" /></div>
+                                        <div class="partner"><img src="images/black-bird.png" alt="" /></div>
+                                        <div class="partner"><img src="images/sensation.png" alt="" /></div>
+                                        
+                                        <div class="clr"></div>
+                                    </div> <!-- End Slider -->
+                                    
+                                    <div class="slider">
+                                        
+                                        <div class="partner"><img src="images/Untitled-1.png" alt="" /></div>
+                                        <div class="partner"><img src="images/idea.png" alt="" /></div>
+                                        <div class="partner"><img src="images/jecko.png" alt="" /></div>
+                                        <div class="partner"><img src="images/black-bird.png" alt="" /></div>
+                                        <div class="partner"><img src="images/sensation.png" alt="" /></div>
+                                        
+                                        <div class="clr"></div>
+                                    </div> <!-- End Slider -->
+                                    
+                                    <div class="slider">
+                                        
+                                        <div class="partner"><img src="images/Untitled-1.png" alt="" /></div>
+                                        <div class="partner"><img src="images/idea.png" alt="" /></div>
+                                        <div class="partner"><img src="images/jecko.png" alt="" /></div>
+                                        <div class="partner"><img src="images/black-bird.png" alt="" /></div>
+                                        <div class="partner"><img src="images/sensation.png" alt="" /></div>
+                                        
+                                        <div class="clr"></div>
+                                    </div> <!-- End Slider -->
+                                    
+                                    <div class="slider">
+                                        
+                                        <div class="partner"><img src="images/Untitled-1.png" alt="" /></div>
+                                        <div class="partner"><img src="images/idea.png" alt="" /></div>
+                                        <div class="partner"><img src="images/jecko.png" alt="" /></div>
+                                        <div class="partner"><img src="images/black-bird.png" alt="" /></div>
+                                        <div class="partner"><img src="images/sensation.png" alt="" /></div>
+                                        
+                                        <div class="clr"></div>
+                                    </div> <!-- End Slider -->
+                             <div class="clr"></div>
+                        </div>
+                    </div> <!-- End slides_two -->
+                    <div class="clr"></div>
+                    <div class="linespace">Onde Estou? <a href="index.html">Home</a> <span>Dino</span></div>
+                </div>
+            </div>
+                
+            <div class="clr"></div>
+        </div> <!-- End Main BOdy -->
+        
+        <div class="Footer">
+        	<div class="wraper">
+                <div class="footerwidgets">
+                    <h2 class="title">Parceiros</h2>
+                    <div class="textwidget">
+                    
+                    		<div id="slides_five">
+                                 <div class="slides_container">
+                                    
+                                            <div class="slider">
+                                                <img src="images/footer-add.png" alt="" />
+                                            </div> <!-- End Slider -->
+                                            
+                                            <div class="slider">
+                                                <img src="images/footer-add.png" alt="" />
+                                            </div> <!-- End Slider -->
+                                            
+                                            <div class="slider">
+                                                <img src="images/footer-add.png" alt="" />
+                                            </div> <!-- End Slider -->
+                                            
+                                            <div class="slider">
+                                                <img src="images/footer-add.png" alt="" />
+                                            </div> <!-- End Slider -->
+                                     <div class="clr"></div>
+                                </div>
+                            </div> <!-- End slides_two -->
+                  </div>
+                </div>
+                <div class="footerwidgets">
+                    <h2 class="title">Institucional</h2>
+                    <div class="textwidget">
+                    	<ul>
+                        	<li><a href="#">Dino</a></li>
+                            <li><a href="#">Compo Funciona</a></li>
+                            <li><a href="#">Quemusa</a></li>
+                            <li><a href="#">Precc6</a></li>
+                            <li><a href="#">Saibacomo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerwidgets">
+                    <h2 class="lasttitle">Central de</h2>
+                    <div class="textwidget">
+                    	<h1 class="last">Atendimento:</h1>
+                        <div class="contact"><span>(21)</span>0822-1728028</div>
+                        <div class="contactdetail"><a href="#"></a></div>
+                    </div>
+                </div>
+                <div class="clr"></div>
+                <div class="footermenu">
+                	<ul>
+                    	<li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="centro.html">CENTRO DE NOTÍCIAS</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
+                    </ul>
+                    <div class="clr"></div>
+                </div>
+                
+                <div class="clr"></div>
+                <div class="footerbottomwidgets">
+                	&copy;Dino. Todos os Direitos Reservados.
+                </div>
+                <div class="footerbottomwidgets widget-2">
+                	<ul class="footerbottom">
+                    	<li><a href="#">Politica de Privacidade</a></li>
+                        <li><a href="#">Term os de Uso</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                    </ul>
+                </div>
+                <div class="footerbottomwidgets socialwidget">
+                	<div class="socialtitle">Siga-nos</div>
+                    <ul class="socialicon">
+                    	<li><a href="#"></a></li>
+                        <li class="twitter"><a href="#"></a></li>
+                        <li class="skype"><a href="#"></a></li>
+                        <li class="linked"><a href="#"></a></li>
+                        <li class="blog"><a href="#"></a></li>
+                    </ul>
+                </div>
+             </div>
+            <div class="clr"></div>
+        </div> <!-- End Footer -->
+        <div class="clr"></div>
+    </div>
+    
+     
+</body>
+</html>

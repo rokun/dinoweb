@@ -1,0 +1,320 @@
+ <INVISIBLE>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<META HTTP-EQUIV="imagetoolbar" CONTENT="no">
+<title>DINOWEB</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="font/stylesheet.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.min.js"></script>
+	<script src="js/slides.min.jquery.js"></script>
+	
+<script>
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				generateNextPrev: true,
+				play: false,
+				pause: 2500,
+				effect: 'fade'
+			});
+			$('#slides_two').slides({
+				generateNextPrev: true,
+				play: 5000
+			});
+			$('#slides_three').slides({
+				generateNextPrev: true,
+				play: 5000
+			});
+			$('#slides_four').slides({
+				effect: 'fade',
+				play: 7000,
+				generateNextPrev : false
+			});
+			$('#slides_five').slides({
+				generateNextPrev: false,
+				play: 7000,
+				effect: 'fade'
+			});
+		});
+	</script>
+
+<script language="javascript">
+function noCTRL(e)
+{
+ var code = (document.all) ? event.keyCode:e.which;
+ var msg = "Sorry, this functionality is disabled.";
+ if (parseInt(code)==17) // This is the Key code for CTRL key
+ {
+  alert(msg);
+  window.event.returnValue = false;
+ }
+}
+
+</script>
+
+
+
+</head>
+
+<body onMouseDown="whichButton(event)" onKeyDown="return noCTRL(event)">
+
+    
+	<div class="MainTemplate" >
+    	<div class="wraper">
+    	<div class="Header">
+        	<div class="HeaderTop">
+            	
+                <div class="clr"></div>
+            </div>
+            <div class="HeaderBottom">
+            	<div class="logo">
+                	<a href="index.html"><img src="images/logo.png" alt="" /></a>
+                </div>
+                <div class="MainMenu">
+                	<ul>
+                    	<li class="active"><a href="index.html">Home</a>
+                        	<ul class="submenu">
+                            	<li class="active"><a href="dino.html">Dino</a></li>
+                                <li><a href="dino.html">COMO FUNCIONA</a></li>
+                                <li><a href="dino.html">NOSSOS CLIENTES</a></li>
+                                <li><a href="dino.html">QUEM USA</a></li>
+                                <li><a href="dino.html">PREÇOS</a></li>
+                                <li><a href="dino.html">SAIBA COMO</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="centro.html">CENTRO DE NOTÍCIAS</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
+                    </ul>
+                </div>
+                
+                <div class="RightMenu"><a href="#"></a></div>
+                <div class="clr"></div>
+            </div>
+            
+        	<div class="clr"></div>
+        </div> <!-- End Header -->
+            <div class="clr"></div>
+    	</div>	<!-- End Wraper -->
+        <div class="MainBody">
+        	<div class="wraper">
+            
+            	<div class="left RegisterSlider">
+                	<h1 class="SliderTitle">CADASTRO</h1>
+                	<div id="slides">
+                        <div class="slides_container">
+                            <div class="slider">
+                            	<h1 class="R_SliderTitle"><span>Lorem ipsum dolor sit </span>consectetur</h1>
+                                <div class="image"><img src="images/slider-left.png" alt="" /></div>
+                                <p class="sliderdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                
+                            </div>
+                            <div class="slider">
+                            	<h1 class="R_SliderTitle"><span>Lorem ipsum dolor sit </span>consectetur</h1>
+                                <div class="image"><img src="images/slider-left.png" alt="" /></div>
+                                <p class="sliderdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                
+                            </div>
+                            <div class="slider">
+                            	<h1 class="R_SliderTitle"><span>Lorem ipsum dolor sit </span>consectetur</h1>
+                                <div class="image"><img src="images/slider-left.png" alt="" /></div>
+                                <p class="sliderdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                
+                            </div>
+                            <div class="slider">
+                            	<h1 class="R_SliderTitle"><span>Lorem ipsum dolor sit </span>consectetur</h1>
+                                <div class="image"><img src="images/slider-left.png" alt="" /></div>
+                                <p class="sliderdes">Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                
+                            </div>
+                        </div>
+                    </div> <!-- Slides -->
+                </div>
+                
+                <div class="right RightContact">
+                	<h1 class="ContactTitle">Lorem ipsum dolor</h1>
+                    <h1 class="ContactSubTitle">Lorem ipsum</h1>
+                    
+                    <div class="contacttext">
+                    	<h3 class="ltext">Lorem ipsum dolor</h3>
+                        <div class="rtext">Lorem ipsum</div>
+                        <div class="clr"></div>
+                    </div>
+                
+                <div class="ContactUsForm">    
+                    <form action="#">
+                    	<input type="text" name="name" value="name" />
+                        <input type="text" name="name" value="name" />
+                        <input type="text" name="name" value="name" />
+                        <input type="text" name="name" value="name" />
+                        <input type="text" name="name" value="name" />
+                        <input type="text" name="name" value="name" />
+                        <input type="checkbox" name="read" />Lorem ipsum dolor sit amet, consectetur
+                        <div class="clr"></div>
+                        <input type="submit" class="submit" value="Codastrar" />
+                    </form>
+                </div>
+                
+                </div>
+                	<div class="clr"></div>
+                
+                
+                <div class="middlewidget RegisterWidgets">
+                	<h1 class="RegisterTitle">Veja Como<span>Funciona!</span></h1>
+                	<div class="widget">
+                    	<h2 class="widgettitle title-1">Crie Sua<span>Conta</span></h2>
+                        <ul>
+                        	<li><a href="#">Lorem ipsum dolor sit amet, consectetur</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur</a></li>
+                        </ul>
+                    </div> <!-- Widget -->
+                    
+                    <div class="widget">
+                    	<h2 class="widgettitle title-2">Escreva<span>Seu Release</span></h2>
+                        <ul>
+                        	<li><a href="#">Lorem ipsum dolor sit amet, consectetur</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur</a></li>
+                        </ul>
+                    </div> <!-- Widget -->
+                    
+                    <div class="widget">
+                    	<h2 class="widgettitle title-3">Distribua<span>Naweb</span></h2>
+                      
+                            
+                            
+                            <ul>
+                        	<li><a href="#">Lorem ipsum dolor sit amet, consectetur</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur</a></li>
+                        </ul>
+                    
+                    </div> <!-- Widget -->
+                    <div class="clr"></div>
+                </div>
+                
+                
+                <div class="clr"></div>
+            </div>
+                <div class="wraper">
+                    <div class="linespace">Onde Estou? <a href="index.html">Home</a> <span>Dino</span></div>
+                </div>
+                
+            <div class="clr"></div>
+        </div> <!-- End Main BOdy -->
+        
+        <div class="Footer">
+        	<div class="wraper">
+                <div class="footerwidgets">
+                    <h2 class="title">Parceiros</h2>
+                    <div class="textwidget">
+                    
+                    		<div id="slides_five">
+                                 <div class="slides_container">
+                                    
+                                            <div class="slider">
+                                                <img src="images/footer-add.png" alt="" />
+                                            </div> <!-- End Slider -->
+                                            
+                                            <div class="slider">
+                                                <img src="images/footer-add.png" alt="" />
+                                            </div> <!-- End Slider -->
+                                            
+                                            <div class="slider">
+                                                <img src="images/footer-add.png" alt="" />
+                                            </div> <!-- End Slider -->
+                                            
+                                            <div class="slider">
+                                                <img src="images/footer-add.png" alt="" />
+                                            </div> <!-- End Slider -->
+                                     <div class="clr"></div>
+                                </div>
+                            </div> <!-- End slides_two -->
+                  </div>
+                </div>
+                <div class="footerwidgets">
+                    <h2 class="title">Institucional</h2>
+                    <div class="textwidget">
+                    	<ul>
+                        	<li><a href="#">Dino</a></li>
+                            <li><a href="#">Compo Funciona</a></li>
+                            <li><a href="#">Quemusa</a></li>
+                            <li><a href="#">Precc6</a></li>
+                            <li><a href="#">Saibacomo</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerwidgets">
+                    <h2 class="lasttitle">Central de</h2>
+                    <div class="textwidget">
+                    	<h1 class="last">Atendimento:</h1>
+                        <div class="contact"><span>(21)</span>0822-1728028</div>
+                        <div class="contactdetail"><a href="#"></a></div>
+                    </div>
+                </div>
+                <div class="clr"></div>
+                <div class="footermenu">
+                	<ul>
+                    	<li class="active"><a href="index.html">Home</a></li>
+                        <li><a href="centro.html">CENTRO DE NOTÍCIAS</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="contato.html">CONTATO</a></li>
+                    </ul>
+                    <div class="clr"></div>
+                </div>
+                
+                <div class="clr"></div>
+                <div class="footerbottomwidgets">
+                	&copy;Dino. Todos os Direitos Reservados.
+                </div>
+                <div class="footerbottomwidgets widget-2">
+                	<ul class="footerbottom">
+                    	<li><a href="#">Politica de Privacidade</a></li>
+                        <li><a href="#">Term os de Uso</a></li>
+                        <li><a href="#">Fale Conosco</a></li>
+                    </ul>
+                </div>
+                <div class="footerbottomwidgets socialwidget">
+                	<div class="socialtitle">Siga-nos</div>
+                    <ul class="socialicon">
+                    	<li><a href="#"></a></li>
+                        <li class="twitter"><a href="#"></a></li>
+                        <li class="skype"><a href="#"></a></li>
+                        <li class="linked"><a href="#"></a></li>
+                        <li class="blog"><a href="#"></a></li>
+                    </ul>
+                </div>
+             </div>
+            <div class="clr"></div>
+        </div> <!-- End Footer -->
+        <div class="clr"></div>
+    </div>
+
+<script language=JavaScript>
+
+
+//Disable right click script III- By Renigade (renigade@mediaone.net)
+//For full source code, visit http://www.dynamicdrive.com
+
+var message="";
+///////////////////////////////////
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+
+document.oncontextmenu=new Function("return false")
+// 
+</script>
+</body>
+</html>
+ </INVISIBLE>
